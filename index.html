@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soumya Sri | Cybersecurity Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0a0a0a;
+color:#00ff9c;
+font-family:'Share Tech Mono', monospace;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+position:sticky;
+top:0;
+background:#000;
+}
+
+nav a{
+color:#00ff9c;
+text-decoration:none;
+margin-left:25px;
+font-size:16px;
+}
+
+nav a:hover{
+text-shadow:0 0 10px #00ff9c;
+}
+
+section{
+padding:80px 10%;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+text-shadow:0 0 15px #00ff9c;
+}
+
+.hero h2{
+margin-top:10px;
+font-size:22px;
+color:#00ffaa;
+}
+
+.typing{
+margin-top:15px;
+font-size:18px;
+color:#00e676;
+}
+
+h2.section-title{
+font-size:28px;
+margin-bottom:20px;
+text-shadow:0 0 10px #00ff9c;
+}
+
+.about p{
+max-width:700px;
+line-height:1.7;
+}
+
+.skills ul{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+list-style:none;
+}
+
+.skills li{
+padding:12px;
+border:1px solid #00ff9c;
+border-radius:6px;
+text-align:center;
+}
+
+.skills li:hover{
+background:#001a12;
+box-shadow:0 0 10px #00ff9c;
+}
+
+.projects{
+text-align:center;
+}
+
+.education p{
+line-height:1.6;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+footer{
+text-align:center;
+padding:20px;
+border-top:1px solid #00ff9c;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h3>Soumya Sri</h3>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>K. Soumya Sri</h1>
+
+<h2>Cybersecurity Enthusiast | B.Tech Student</h2>
+
+<p class="typing" id="typing"></p>
+
+</section>
+
+<section id="about" class="about">
+
+<h2 class="section-title">About Me</h2>
+
+<p>
+I am a first-year B.Tech student at Geetanjali College of Engineering and Technology.
+I am passionate about cybersecurity, programming, and problem-solving.  
+I have strong communication skills and I am fluent in English.  
+I am eager to learn ethical hacking, network security, and secure coding.
+</p>
+
+</section>
+
+<section id="skills" class="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<ul>
+
+<li>Programming: C</li>
+<li>Basics of Data Structures</li>
+<li>Cybersecurity Fundamentals</li>
+<li>Problem Solving</li>
+<li>Communication Skills</li>
+
+</ul>
+
+</section>
+
+<section id="projects" class="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<p>🚧 Coming Soon: Cybersecurity tools and mini projects</p>
+
+</section>
+
+<section id="education" class="education">
+
+<h2 class="section-title">Education</h2>
+
+<p><strong>B.Tech (Pursuing)</strong></p>
+
+<p>Geetanjali College of Engineering and Technology</p>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p>Email: soumyasrikurapati@gmail.com</p>
+
+<p>LinkedIn: Coming Soon</p>
+
+<p>GitHub: Coming Soon</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Soumya Sri | Cybersecurity Portfolio</p>
+
+</footer>
+
+<script>
+
+const text = "Securing the digital world, one line of code at a time";
+let i = 0;
+
+function typing(){
+
+if(i < text.length){
+document.getElementById("typing").innerHTML += text.charAt(i);
+i++;
+setTimeout(typing,60);
+}
+
+}
+
+typing();
+
+</script>
+
+</body>
+</html>
